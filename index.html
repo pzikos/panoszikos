@@ -125,6 +125,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
   .e-grid{grid-template-columns:1fr}
   .c-grid{grid-template-columns:1fr 1fr}
   .c-links{flex-direction:column}
+  .contact-grid{grid-template-columns:1fr}
   .foot-inner{flex-direction:column;gap:10px;text-align:center}
 }
 
@@ -142,6 +143,35 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
 .f-link{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);display:inline-flex;align-items:center;gap:6px;transition:color .2s}
 .f-card:hover .f-link{color:var(--accent)}
 
+
+/* CONTACT SECTION */
+#contact-me{background:var(--off);padding:100px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.contact-info{display:flex;flex-direction:column;gap:32px}
+.contact-item{display:flex;align-items:flex-start;gap:20px}
+.contact-icon{width:48px;height:48px;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-icon svg{width:20px;height:20px;fill:#fff}
+.contact-label{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.contact-value{font-size:17px;font-weight:400;color:var(--navy);text-decoration:none;transition:color .2s}
+.contact-value:hover{color:var(--accent)}
+.social-wrap{margin-top:16px}
+.social-label{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
+.social-links{display:flex;gap:12px}
+.social-link{width:48px;height:48px;border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all .25s;background:var(--white)}
+.social-link:hover{background:var(--navy);border-color:var(--navy)}
+.social-link svg{width:20px;height:20px;fill:var(--navy);transition:fill .25s}
+.social-link:hover svg{fill:#fff}
+.contact-form-side{padding:48px;background:var(--white);border:1px solid var(--border)}
+.contact-form-title{font-size:24px;font-weight:600;color:var(--navy);margin-bottom:8px}
+.contact-form-sub{font-size:14px;color:var(--muted);margin-bottom:32px;line-height:1.6}
+.form-group{margin-bottom:20px}
+.form-group label{display:block;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);margin-bottom:8px}
+.form-group input,.form-group textarea{width:100%;padding:12px 16px;border:1px solid var(--border2);background:var(--off);font-family:var(--ff);font-size:14px;color:var(--text);outline:none;transition:border-color .2s;resize:none}
+.form-group input:focus,.form-group textarea:focus{border-color:var(--navy)}
+.form-group textarea{height:120px}
+.form-submit{width:100%;padding:14px;background:var(--navy);color:#fff;border:none;font-family:var(--ff);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background .2s}
+.form-submit:hover{background:var(--accent)}
+
 </style>
 </head>
 <body>
@@ -156,7 +186,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
       <li><a href="#career">Career</a></li>
       <li><a href="#education">Education</a></li>
     </ul>
-    <a href="#contact" class="nav-cta">Get in Touch</a>
+    <a href="#contact-me" class="nav-cta">Get in Touch</a>
   </div>
 </nav>
 
@@ -299,6 +329,70 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
   </div>
 </section>
 
+<div class="divider"></div>
+
+<section id="contact-me">
+  <div class="wrap">
+    <div class="section-tag r">Contact</div>
+    <h2 class="section-title r">Get in <strong>touch.</strong></h2>
+    <div class="contact-grid">
+      <div class="r">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Mobile</div>
+              <a href="tel:+306936541432" class="contact-value">+30 693 654 1432</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:zikos@ilink.gr" class="contact-value">zikos@ilink.gr</a>
+            </div>
+          </div>
+        </div>
+        <div class="social-wrap" style="margin-top:48px">
+          <div class="social-label">Connect</div>
+          <div class="social-links">
+            <a href="https://gr.linkedin.com/in/panagiotis-zikos" target="_blank" class="social-link" title="LinkedIn">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/panagiotis.zikos.54/" target="_blank" class="social-link" title="Facebook">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/panagiotis.zikos.54/" target="_blank" class="social-link" title="Instagram">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-side r">
+        <div class="contact-form-title">Send a message</div>
+        <div class="contact-form-sub">I read every message personally and respond within 24–48 hours.</div>
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="John Smith">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="john@company.com">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="How can I help you?"></textarea>
+        </div>
+        <button class="form-submit" onclick="handleSubmit(event)">Send Message</button>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="contact">
   <div class="wrap">
     <div class="section-tag">Get in Touch</div>
@@ -327,6 +421,16 @@ const obs=new IntersectionObserver(entries=>{
 },{threshold:0.07});
 els.forEach(el=>obs.observe(el));
 window.addEventListener('scroll',()=>{document.querySelector('nav').style.boxShadow=scrollY>40?'0 2px 16px rgba(0,0,0,.07)':'none'});
+
+function handleSubmit(e) {
+  const btn = e.target;
+  const name = btn.closest('.contact-form-side').querySelector('input[type=text]').value;
+  const email = btn.closest('.contact-form-side').querySelector('input[type=email]').value;
+  const msg = btn.closest('.contact-form-side').querySelector('textarea').value;
+  if (!name || !email || !msg) { btn.textContent = 'Please fill all fields'; setTimeout(()=>btn.textContent='Send Message',2000); return; }
+  const mailto = `mailto:zikos@ilink.gr?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(msg)}%0A%0AFrom: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}`;
+  window.location.href = mailto;
+}
 </script>
 </body>
 </html>
