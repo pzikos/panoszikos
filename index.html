@@ -121,11 +121,27 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
   section{padding:72px 0}
   .hero-inner{padding:56px 24px 64px}
   .v-grid{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr}
   .e-grid{grid-template-columns:1fr}
   .c-grid{grid-template-columns:1fr 1fr}
   .c-links{flex-direction:column}
   .foot-inner{flex-direction:column;gap:10px;text-align:center}
 }
+
+/* FEATURED */
+#featured{background:var(--white)}
+.f-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.f-card{background:var(--off);padding:44px 40px;border:1px solid var(--border);position:relative;overflow:hidden;text-decoration:none;display:block;transition:border-color .25s,box-shadow .25s}
+.f-card:hover{border-color:var(--border2);box-shadow:0 8px 32px rgba(27,52,96,.06)}
+.f-accent{position:absolute;top:0;left:0;width:4px;height:0;background:var(--navy);transition:height .4s ease}
+.f-card:hover .f-accent{height:100%}
+.f-source{font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;display:flex;align-items:center;gap:8px}
+.f-source::before{content:'';display:inline-block;width:24px;height:1px;background:var(--accent)}
+.f-title{font-size:19px;font-weight:600;color:var(--navy);line-height:1.35;margin-bottom:14px}
+.f-desc{font-size:13.5px;line-height:1.75;color:var(--muted);margin-bottom:28px}
+.f-link{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);display:inline-flex;align-items:center;gap:6px;transition:color .2s}
+.f-card:hover .f-link{color:var(--accent)}
+
 </style>
 </head>
 <body>
@@ -136,6 +152,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#ventures">Ventures</a></li>
+      <li><a href="#featured">Featured</a></li>
       <li><a href="#career">Career</a></li>
       <li><a href="#education">Education</a></li>
     </ul>
@@ -195,6 +212,41 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
       <div class="v-card r"><div class="v-accent"></div><div class="v-num">02</div><div class="v-title">Business Advisory</div><div class="v-sub">Independent Advisor · Strategy & Service Delivery</div><p class="v-desc">I advise founders and executives on growth, strategy, and operational transformation. My advisory profile is shaped by 17+ years at Otis Greece & Cyprus in C-level roles and two decades as a founder. My focus is business strategy with a strong emphasis on service delivery — helping companies design, scale, and sharpen how they create value, regardless of industry.</p></div>
       <div class="v-card r"><div class="v-accent"></div><div class="v-num">03</div><div class="v-title">Athenian Facility Services</div><div class="v-sub">Co-Founder & Business Partner · 2024 – Present</div><p class="v-desc">AFS delivers integrated hard and soft facility management services — technical maintenance, building systems management, cleaning, and site operations — for clients requiring professionally managed solutions across complex or multi-site facilities.</p><a href="https://athenian-fs.gr" target="_blank" class="v-link">Visit athenian-fs.gr →</a></div>
       <div class="v-card r"><div class="v-accent"></div><div class="v-num">04</div><div class="v-title">BreathCenter</div><div class="v-sub">Co-Founder · Medical Respiratory Wellness</div><p class="v-desc">An Athens-based medical respiratory wellness centre co-founded with pulmonologist Dr. Alexandra Koutsokera. Combining evidence-based therapies — IHHT and Red Light Therapy — to support respiratory health, cellular recovery, and physical performance. Physician-led and clinically grounded.</p><a href="https://breathcenter.gr" target="_blank" class="v-link">Visit breathcenter.gr →</a></div>
+    </div>
+  </div>
+</section>
+
+
+<div class="divider"></div>
+
+<section id="featured">
+  <div class="wrap">
+    <div class="section-tag r">Featured</div>
+    <h2 class="section-title r">In the <strong>spotlight.</strong></h2>
+    <div class="f-grid">
+      <a href="https://www.cmu.edu/ini/news/2021/panagiotis-zikos.html" target="_blank" class="f-card r">
+        <div class="f-accent"></div>
+        <div class="f-source">Carnegie Mellon University</div>
+        <div class="f-title">More Than A Dream: Panagiotis Zikos</div>
+        <p class="f-desc">Alumni profile in the INI Magazine, College of Engineering. On entrepreneurship, blockchain innovation, and building iLINK while rising to CEO at Otis Greece & Cyprus.</p>
+        <span class="f-link">Read on cmu.edu →</span>
+      </a>
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7457450425064259584/" target="_blank" class="f-card r">
+        <div class="f-accent"></div>
+        <div class="f-source">European Commission · Horizon Europe</div>
+        <div class="f-title">iLINK Awarded Seal of Excellence — FLAIR-Logistics</div>
+        <p class="f-desc">The European Commission recognised iLINK's FLAIR-Logistics proposal — "Federated Neuro-Symbolic AI for Next-Generation Logistics in Europe" — as a high-quality project in a highly competitive evaluation process.</p>
+        <span class="f-link">View on LinkedIn →</span>
+      </a>
+      <div class="f-card r" style="background:var(--navy);border-color:var(--navy);cursor:default">
+        <div style="height:100%;display:flex;flex-direction:column;justify-content:space-between">
+          <div>
+            <div class="f-source" style="color:rgba(255,255,255,.45)">On Leadership</div>
+            <div class="f-title" style="color:#fff;font-size:22px;font-weight:300;line-height:1.45;font-style:italic">"Starting your own company demands more than a dream. You need strong guts — and the humility to remain a good person when you succeed."</div>
+          </div>
+          <div style="font-size:11px;color:rgba(255,255,255,.35);font-weight:500;letter-spacing:.06em;margin-top:28px">— CMU INI Magazine, 2021</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
