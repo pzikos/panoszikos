@@ -126,12 +126,14 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
   .c-grid{grid-template-columns:1fr 1fr}
   .c-links{flex-direction:column}
   .contact-grid{grid-template-columns:1fr}
+  .spotlight-inner{grid-template-columns:1fr}
+  .spotlight-right{grid-template-columns:1fr}
   .foot-inner{flex-direction:column;gap:10px;text-align:center}
 }
 
 /* FEATURED */
 #featured{background:var(--white)}
-.f-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.f-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px}
 .f-card{background:var(--off);padding:44px 40px;border:1px solid var(--border);position:relative;overflow:hidden;text-decoration:none;display:block;transition:border-color .25s,box-shadow .25s}
 .f-card:hover{border-color:var(--border2);box-shadow:0 8px 32px rgba(27,52,96,.06)}
 .f-accent{position:absolute;top:0;left:0;width:4px;height:0;background:var(--navy);transition:height .4s ease}
@@ -171,6 +173,14 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
 .form-group textarea{height:120px}
 .form-submit{width:100%;padding:14px;background:var(--navy);color:#fff;border:none;font-family:var(--ff);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background .2s}
 .form-submit:hover{background:var(--accent)}
+
+
+
+.sp-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);padding:28px 32px;transition:background .25s}
+.sp-card:hover{background:rgba(255,255,255,.08)}
+.sp-card-num{font-size:10px;font-weight:700;letter-spacing:.18em;color:rgba(255,255,255,.3);margin-bottom:12px}
+.sp-card-title{font-size:15px;font-weight:600;color:#fff;margin-bottom:6px}
+.sp-card-desc{font-size:13px;line-height:1.7;color:rgba(255,255,255,.5)}
 
 </style>
 </head>
@@ -216,13 +226,14 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
       <div class="r">
         <div class="about-label">The Story</div>
         <div class="about-metrics">
+          <div class="metric"><div class="metric-num">2002</div><div class="metric-lbl">Graduated NTUA — the journey begins</div></div>
           <div class="metric"><div class="metric-num">2005</div><div class="metric-lbl">Founded iLINK — still building it</div></div>
           <div class="metric"><div class="metric-num">2007</div><div class="metric-lbl">Joined Otis Greece — rose to CEO & MD</div></div>
           <div class="metric"><div class="metric-num">2024</div><div class="metric-lbl">Left Otis. Went all-in on entrepreneurship</div></div>
         </div>
       </div>
       <div class="about-body r">
-        <p class="about-intro">For 17 years I ran two careers in parallel — as CEO & Managing Director of Otis Greece & Cyprus, and as co-founder of iLINK, a telematics company I built from the ground up.</p>
+        <p class="about-intro">Entrepreneur, executive, and recognised expert in <strong>vertical transportation</strong>, <strong>smart mobility</strong>, and <strong>smart logistics</strong>. For 17 years I ran two careers in parallel — as CEO & Managing Director of Otis Greece & Cyprus, and as co-founder of iLINK, a telematics company I built from the ground up.</p>
         <p>In September 2024 I went all-in on my own ventures. Today iLINK is a team of 25, serving fleet operators, logistics organisations, and public-sector clients across Greece — with recurring revenue above 85%, zero debt, and continuous growth through two major financial crises.</p>
         <p>The combination of <strong>multinational discipline and entrepreneurial execution</strong> is the lens I apply to everything I build and advise. My background is engineering-first: NTUA, Carnegie Mellon, MBA, MIT Sloan. I prefer building the systems I lead.</p>
         <p>Alongside iLINK, I co-founded Athenian Facility Services and BreathCenter, and I advise founders and executives on business strategy with a strong emphasis on service delivery.</p>
@@ -247,6 +258,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
 </section>
 
 
+
 <div class="divider"></div>
 
 <section id="featured">
@@ -261,13 +273,6 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
         <p class="f-desc">Alumni profile in the INI Magazine, College of Engineering. On entrepreneurship, blockchain innovation, and building iLINK while rising to CEO at Otis Greece & Cyprus.</p>
         <span class="f-link">Read on cmu.edu →</span>
       </a>
-      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7457450425064259584/" target="_blank" class="f-card r">
-        <div class="f-accent"></div>
-        <div class="f-source">European Commission · Horizon Europe</div>
-        <div class="f-title">iLINK Awarded Seal of Excellence — FLAIR-Logistics</div>
-        <p class="f-desc">The European Commission recognised iLINK's FLAIR-Logistics proposal — "Federated Neuro-Symbolic AI for Next-Generation Logistics in Europe" — as a high-quality project in a highly competitive evaluation process.</p>
-        <span class="f-link">View on LinkedIn →</span>
-      </a>
       <div class="f-card r" style="background:var(--navy);border-color:var(--navy);cursor:default">
         <div style="height:100%;display:flex;flex-direction:column;justify-content:space-between">
           <div>
@@ -277,6 +282,20 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
           <div style="font-size:11px;color:rgba(255,255,255,.35);font-weight:500;letter-spacing:.06em;margin-top:28px">— CMU INI Magazine, 2021</div>
         </div>
       </div>
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7457450425064259584/" target="_blank" class="f-card r">
+        <div class="f-accent"></div>
+        <div class="f-source">European Commission · Horizon Europe</div>
+        <div class="f-title">iLINK Awarded Seal of Excellence — FLAIR-Logistics</div>
+        <p class="f-desc">The European Commission recognised iLINK's FLAIR-Logistics proposal — "Federated Neuro-Symbolic AI for Next-Generation Logistics in Europe" — as a high-quality project in a highly competitive evaluation process.</p>
+        <span class="f-link">View on LinkedIn →</span>
+      </a>
+      <a href="https://www.powerfleet.gr/ekseidikeymenes-lyseis/vytiofora" target="_blank" class="f-card r">
+        <div class="f-accent"></div>
+        <div class="f-source">iLINK · Vertical Solution</div>
+        <div class="f-title">PowerFleet Fuel Management — Tanker Fleet Compliance & Intelligence</div>
+        <p class="f-desc">As Greece's 2024 AADE regulation mandated real-time GPS reporting for all fuel tankers, iLINK responded with a purpose-built certified telematics platform — covering compliance, IoT fleet monitoring, and route optimisation for energy product transport.</p>
+        <span class="f-link">View on powerfleet.gr →</span>
+      </a>
     </div>
   </div>
 </section>
@@ -321,7 +340,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,.08);padding
     <div class="c-grid r">
       <div class="c-item"><div class="c-role">Chairman</div><div class="c-org">PETAK — Greek Lifts Association · Member of ELA</div><div class="c-period">Dec 2021 – Sep 2024</div></div>
       <div class="c-item"><div class="c-role">Vice President</div><div class="c-org">ITS Hellas — Intelligent Transport Systems</div><div class="c-period">Sep 2019 – Present</div></div>
-      <div class="c-item"><div class="c-role">BoD Alternate Member</div><div class="c-org">EASE — European Lift Association</div><div class="c-period">Feb 2021 – Present</div></div>
+      <div class="c-item"><div class="c-role">BoD Alternate Member</div><div class="c-org">EASE — European Lift Association</div><div class="c-period">2022 – 2024</div></div>
       <div class="c-item"><div class="c-role">Certified Assessor</div><div class="c-org">General Secretariat for Research & Technology (ΓΓΕΤ)</div><div class="c-period">Jan 2017 – Present</div></div>
       <div class="c-item"><div class="c-role">Member</div><div class="c-org">Hellenic Blockchain Hub</div><div class="c-period">Dec 2018 – Present</div></div>
       <div class="c-item"><div class="c-role">Member</div><div class="c-org">MENSA International</div><div class="c-period">Jan 2015 – Present</div></div>
